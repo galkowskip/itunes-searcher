@@ -1,0 +1,56 @@
+.bar {
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.topText {
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+.bottomText {
+  color: #ffffff;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.textInput {
+  outline: 0;
+  border: 0;
+  border-radius: 20px 0 0 20px;
+  width: 190px;
+  padding: 10px 20px;
+  box-shadow: 0;
+}
+.inputButton {
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+  outline: 0;
+  box-shadow: 0;
+  padding: 10px 20px;
+  border: 0;
+  width: 80px;
+  color: #ffffff;
+  background-color: #f7941d;
+}
+
+@media (min-width: 940px) {
+  .bar {
+    grid-column: 1/4;
+    grid-row: 2 / 3;
+  }
+}
+@media (min-width: 640px) and (max-width: 939px) {
+  .bar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 640px) {
+}

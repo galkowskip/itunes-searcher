@@ -1,0 +1,28 @@
+.bar {
+  background-color: #ffffff;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-content: center;
+  justify-items: start;
+  display: grid;
+  grid-template-columns: auto 900px auto;
+}
+.logo {
+  display: flex;
+  grid-column: 2/3;
+}
+
+@media (min-width: 939px) {
+  .logo {
+    grid-column: 2/3;
+    margin-left: 11px;
+  }
+}
+
+@media (max-width: 930px) {
+  .logo {
+    margin: 10px 4px 10px 4px;
+  }
+}
